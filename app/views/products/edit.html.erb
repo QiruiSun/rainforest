@@ -1,6 +1,15 @@
 <h2> Edit this Product </h2>
 
-<%= form_for @product do |p| %>
+<%= link_to "Back", product_path(@product) %>
+
+<p>
+<br>
+<br>
+
+</p>
+<%= render 'form' %>
+
+<!-- <%= form_for @product do |p| %>
 <p>
   <%= p.label :name %> <br>
   <%= p.text_field :name %>
@@ -18,4 +27,4 @@
 
 <p>
   <%= p.submit "Edit Product" %>
-</p>
+</p> -->
